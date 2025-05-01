@@ -1,16 +1,16 @@
 import json
-import pandas
 
 with (
     open("report.json", 'w') as report_file,
     open("tests.json", 'r') as tests_file,
+    open("values.json", 'r') as values_file,
 ):
     tests = json.load(tests_file)
-    dic_values = pandas.read_json("values.json").to_dict()
+    dic_values = json.load(values_file)
 
     id_value = {}
 
-    for test in dic_values["values"].values():
+    for test in dic_values["values"]:
         id_value[test['id']] = test['value']
 
 
