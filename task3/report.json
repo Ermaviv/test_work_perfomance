@@ -1,16 +1,16 @@
 {
-  "tests": {
-    "0": {
+  "tests": [
+    {
       "id": 2,
       "title": "Smoke test",
       "value": "passed"
     },
-    "1": {
+    {
       "id": 41,
       "title": "Debug test",
       "value": "passed"
     },
-    "2": {
+    {
       "id": 73,
       "title": "Performance test",
       "value": "passed",
@@ -63,7 +63,7 @@
         }
       ]
     },
-    "3": {
+    {
       "id": 122,
       "title": "Security test",
       "value": "failed",
@@ -80,5 +80,5 @@
         }
       ]
     }
-  }
+  ]
 }
