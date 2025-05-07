@@ -1,6 +1,7 @@
 import sys
 
 numbers = sys.argv[1]
+# не рабочий код, неправильное среднее число
 
 with open(numbers, 'r') as file:
     content = []
