@@ -7,7 +7,6 @@ with open(numbers, 'r') as file:
     for i in file:
         content.append(int(i))
     mode = max(content, key=content.count)
-    print(mode)
     if content.count(mode) == 1:
         mode = int((max(content) + min(content)) / 2)
     steps_count = 0
