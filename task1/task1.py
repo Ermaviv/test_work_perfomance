@@ -1,5 +1,6 @@
-N = int(input())
-M = int(input())
+import sys
+N = int(sys.argv[1])
+M = int(sys.argv[2])
 
 N_pack = []
 
@@ -12,7 +13,6 @@ FIRST_TRY = True
 
 while k != 0 or FIRST_TRY:
     FIRST_TRY = False
-    # k: (k + M) % N
     path += str(N_pack[k]) + ' '
     k = (k + M - 1) % N
 

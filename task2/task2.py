@@ -1,6 +1,10 @@
+import sys
+file_circle = sys.argv[1]
+file_dots = sys.argv[2]
+
 with (
-    open('circle.txt', 'r') as file_1,
-    open('dot.txt', 'r') as file_2,
+    open(file_circle, 'r') as file_1,
+    open(file_dots, 'r') as file_2,
 ):
     data_circle, data_points = [], []
     for i in file_1:
