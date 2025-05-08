@@ -1,14 +1,14 @@
 import json
 import sys
 
-report_name_file = sys.argv[1]
+values_name_file = sys.argv[1]
 tests_name_file = sys.argv[2]
-values_name_file = sys.argv[3]
+report_name_file = sys.argv[3]
 
 with (
-    open(report_name_file, 'w') as report_file,
-    open(tests_name_file, 'r') as tests_file,
     open(values_name_file, 'r') as values_file,
+    open(tests_name_file, 'r') as tests_file,
+    open(report_name_file, 'w') as report_file,
 ):
     tests = json.load(tests_file)
     dic_values = json.load(values_file)
